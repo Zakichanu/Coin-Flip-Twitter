@@ -6,6 +6,7 @@ Twitter Bot that flips a coin and tweets the result. mention him on Twitter and 
 
 - Node v16+
 - TypeScript
+- Twitter developer account
 
 ## Installation
 

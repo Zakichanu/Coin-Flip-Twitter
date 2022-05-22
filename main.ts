@@ -45,12 +45,12 @@ async function main(){
 
                 const tweetCleaned = tweet.text.replace('@CoinFlipBotFR', '').trim();
 
-                const words = tweetCleaned.split(' ')
+                const words = tweetCleaned.split('/')
 
                 if(!replied && !isAResponse) {
-                    if ( words.length === 3 && words[1] === "/") {
-                        const firstChoice = words[0];
-                        const secondChoice = words[2];
+                    if ( words.length === 2) {
+                        const firstChoice = words[0].trim();
+                        const secondChoice = words[1].trim();
     
                         const result = await coinFlip(firstChoice, secondChoice);
     
