@@ -1,0 +1,19 @@
+{
+  "name": "coin-flip-twitter",
+  "version": "1.0.0",
+  "description": "Bot twitter that makes a choice of your doubt",
+  "main": "main.ts",
+  "scripts": {
+    "test": "npm run dev",
+    "dev":"nodemon main.ts"
+  },
+  "author": "Zakichanu",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "twitter-api-v2": "^1.12.1"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.35"
+  }
+}
