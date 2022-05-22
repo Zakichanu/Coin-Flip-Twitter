@@ -5,7 +5,7 @@
   "main": "main.ts",
   "scripts": {
     "test": "npm run dev",
-    "dev":"nodemon main.ts"
+    "start":"nodemon main.ts"
   },
   "author": "Zakichanu",
   "license": "MIT",
