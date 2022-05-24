@@ -1,7 +1,6 @@
 # Coin Flip Bot 
 
-Twitter Bot that flips a coin and tweets the result. mention him on Twitter and follow this [format](https://twitter.com/CoinFlipBotFR/status/1528056286583181314?s=20&t=VTOSc_TuR8F2mQJH0hMrhA)
-
+Twitter Bot that flips a coin and tweets the result. mention him on Twitter and follow this format : "@CoinFlipBotFR choice number 1 / choice number 2
 ## Requirements
 
 - Node v16+
