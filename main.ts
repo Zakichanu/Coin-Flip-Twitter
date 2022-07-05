@@ -70,15 +70,22 @@ async function main() {
 
                         // Getting the right format
                         if (words.length === 2) {
-                            const firstChoice = words[0].trim();
-                            const secondChoice = words[1].trim();
+                            const firstChoice : string = words[0].trim();
+                            const secondChoice : string = words[1].trim();
 
                             // Returning result
                             const result = await coinFlip(firstChoice, secondChoice);
 
                             // Replying to tweet
                             await userClient.v2.quote("Le choix est fait : " + result, tweet.id);
-                        } else {
+                        }
+                        else if (words.length === 0) {
+                            const result = await coinFlip("pile", "face");
+
+                            // Replying to tweet
+                            await userClient.v2.quote("Le choix est fait : " + result, tweet.id);
+                        } 
+                        else {
                             console.log(new Date().toString() + " : Error while processing tweet : '" + tweet.text + "' is not a valid format to process the coin flip");
                         }
                     }
