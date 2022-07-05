@@ -77,13 +77,13 @@ async function main() {
                             const result = await coinFlip(firstChoice, secondChoice);
 
                             // Replying to tweet
-                            await userClient.v2.quote("Le choix est fait : " + result, tweet.id);
+                            await userClient.v2.quote(result, tweet.id);
                         }
                         else if (words.length === 0) {
                             const result = await coinFlip("pile", "face");
 
                             // Replying to tweet
-                            await userClient.v2.quote("Le choix est fait : " + result, tweet.id);
+                            await userClient.v2.quote(result, tweet.id);
                         } 
                         else {
                             console.log(new Date().toString() + " : Error while processing tweet : '" + tweet.text + "' is not a valid format to process the coin flip");
