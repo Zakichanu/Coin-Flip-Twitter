@@ -79,7 +79,7 @@ async function main() {
                             // Replying to tweet
                             await userClient.v2.quote(result, tweet.id);
                         }
-                        else if (words.length === 0) {
+                        else if (tweetCleaned === "") {
                             const result = await coinFlip("pile", "face");
 
                             // Replying to tweet
@@ -95,7 +95,7 @@ async function main() {
 
 
     } catch (error) {
-        console.error(error); // Log the error
+        console.log(new Date().toString() + " Jeune erreur mais on s'en fiche");
     }
 }
 
