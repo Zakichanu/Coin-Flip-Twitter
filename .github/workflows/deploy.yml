@@ -30,7 +30,7 @@ jobs:
         PORT: ${{ secrets.PORT }}
       with:
         source: "."
-        target: "/root/projets/CoinFlip"
+        target: "/home/zakichanu/projets/CoinFlip"
 
     - name: 🚀 Executing remote command
       uses: appleboy/ssh-action@master

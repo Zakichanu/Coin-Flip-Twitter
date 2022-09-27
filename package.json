@@ -2,10 +2,11 @@
   "name": "coin-flip-twitter",
   "version": "1.0.0",
   "description": "Bot twitter that makes a choice of your doubt",
-  "main": "main.ts",
+  "main": "coinflip.ts",
   "scripts": {
     "test": "npm run dev",
-    "start":"nodemon main.ts"
+    "start":"pm2 start coinflip.ts --name 'CoinFlip'",
+    "dev": "ts-node coinflip.ts"
   },
   "author": "Zakichanu",
   "license": "MIT",

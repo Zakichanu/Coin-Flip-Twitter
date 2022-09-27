@@ -80,7 +80,7 @@ async function main() {
                             await userClient.v2.quote(result, tweet.id);
                         }
                         else if (tweetCleaned === "") {
-                            const result = await coinFlip("pile", "face");
+                            const result = await coinFlip("Pile", "Face");
 
                             // Replying to tweet
                             await userClient.v2.quote(result, tweet.id);
